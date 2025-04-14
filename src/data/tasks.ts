@@ -77,7 +77,7 @@ export const TASKS_DATA: TaskWithSteps[] = [
       {
         title: "Advanced Settings",
         description: "ThousandEyes offers granualirity and control offer specific test configuration. Most testing environments would work using the default settings",
-        image: "photo-1461749280684-dccba630e2f6",
+        image: "/images/task1-step7.png",
         resources: [
           {
             title: "Advanced Test Parameters Configuration",
@@ -88,7 +88,7 @@ export const TASKS_DATA: TaskWithSteps[] = [
       {
         title: "Create Test",
         description: "Create the test to run periodically, or click Run Once, in order to get one round of testing",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        image: "/images/task1-step8.png",
         resources: [
           {
             title: "Scheduled vs Instant Tests",
@@ -140,57 +140,57 @@ export const TASKS_DATA: TaskWithSteps[] = [
         ]
       },
       {
-        title: "Filter View Data",
-        description: "Learn how to filter and sort data within views.",
-        image: "photo-1461749280684-dccba630e2f6",
+        title: "Multi-Layered Views",
+        description: "After enabling Page Load time, HTTP Availability, Network Latency, Loss and BGP Path Changes, we can easily correlate any incident across layers. For example, loss in HTTP Availability may look like an application layer outage at first, but if it coincides with a spike in network loss, then it may indicate an underlying network issue.",
+        image: "/images/task2-step4.png",
         resources: [
           {
-            title: "Data Filtering Best Practices",
-            link: "https://docs.example.com/filtering"
+            title: "What Does Your Test Result Mean?",
+            link: "https://docs.thousandeyes.com/product-documentation/tests/thousandeyes-metrics-what-do-your-results-mean"
           }
         ]
       },
       {
-        title: "Share a View",
-        description: "Discover how to share views with team members.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        title: "Page Load View : Waterfall Diagram",
+        description: "Page load View offers a waterfall diagram that will assist you to understand the domains and components involved in building your webpage and identify the time elapsed to load and fetch each component.",
+        image: "/images/task2-step5.png",
         resources: [
           {
-            title: "Sharing Options Guide",
-            link: "https://docs.example.com/sharing"
+            title: "Understand Waterfall Charts",
+            link: "https://docs.thousandeyes.com/product-documentation/browser-synthetics/navigating-waterfall-charts-for-page-load-and-transaction-tests"
           }
         ]
       },
       {
-        title: "Export View Data",
-        description: "Learn how to export data from views for further analysis.",
-        image: "photo-1531297484001-80022131f5a1",
+        title: "HTTP Layer View",
+        description: "HTTP Layer View offers the status of each phase for connecting to the target server. This will simplify the identification of the troubleshooting process by pinpointing the problematic phase. It also provides the certificate chain, and the content of the HTTP Request and Response Headers",
+        image: "/images/task2-step6.png",
         resources: [
           {
-            title: "Data Export Guide",
-            link: "https://docs.example.com/exporting"
+            title: "HTTP Layer",
+            link: "https://docs.thousandeyes.com/product-documentation/tests/http-server-tests"
           }
         ]
       },
       {
-        title: "Set Up Automated Reports",
-        description: "Configure automatic report generation from view data.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Network Layer",
+        description: "Network Layer provides an end-to-end path visualization which will unlock visibility on the performance on elements even outside of your organization. This will assist you in pinpointing and identifying any problematic node. Notice how target node is different according to each Geographical area. ",
+        image: "/images/task2-step7.png",
         resources: [
           {
-            title: "Automated Reporting Guide",
-            link: "https://docs.example.com/reports"
+            title: "Path Visualization",
+            link: "https://docs.thousandeyes.com/product-documentation/internet-and-wan-monitoring/path-visualization"
           }
         ]
       },
       {
-        title: "Customize View Layout",
-        description: "Personalize your view layout for optimal data interpretation.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        title: "Share Your Test Results",
+        description: "You can also save the test snapshot to share it across teams or ISP's or 3rd-party vendors. You can visit your snapshot repository from Manage>Sharing>Private Snapshots",
+        image: "/images/task2-step8.png",
         resources: [
           {
-            title: "Layout Customization Guide",
-            link: "https://docs.example.com/layout"
+            title: "Snapshots",
+            link: "https://docs.thousandeyes.com/product-documentation/tests/sharing-test-data"
           }
         ]
       }
@@ -204,52 +204,52 @@ export const TASKS_DATA: TaskWithSteps[] = [
     steps: [
       {
         title: "Access Template Library",
-        description: "Find the template library in the platform.",
-        image: "photo-1461749280684-dccba630e2f6",
+        description: "ThousandEyes offers a wide array of ready-to-use templates that monitors the most famous SaaS applications such as Microsoft Services, Slack, Google Services and many more.",
+        image: "/images/task3-step1.png",
         resources: [
           {
             title: "Template Overview",
-            link: "https://docs.example.com/templates"
+            link: "https://docs.thousandeyes.com/product-documentation/tests/templates"
           }
         ]
       },
       {
-        title: "Browse Available Templates",
-        description: "Explore the range of pre-configured templates.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        title: "Selecting a Template",
+        description: "To Deploy a template, click on Start Monitoring button on the top right corner and select your template",
+        image: "/images/task3-step2.png",
         resources: [
           {
-            title: "Template Categories Guide",
-            link: "https://docs.example.com/template-types"
+            title: "Template Categories Onboarding",
+            link: "https://docs.thousandeyes.com/product-documentation/tests#onboarding"
           }
         ]
       },
       {
-        title: "Select Appropriate Template",
-        description: "Choose a template that suits your monitoring needs.",
-        image: "photo-1531297484001-80022131f5a1",
+        title: "Configuring Your Template",
+        description: "Configure Your Template. Select the Enterprise and Cloud Agents to run the test, DNS Servers to use, template name, and the frequency of testing. You can toggle the tests on/off. Remember : Enterprise Agents represent offices and Cloud Agents represent Internet Users. Hint :If you don't have Enterprise Agents yet, you can use Cloud Agents on both fields.",
+        image: "/images/task3-step3.png",
         resources: [
           {
-            title: "Template Selection Guide",
-            link: "https://docs.example.com/selecting-templates"
+            title: "Template Categories Onboarding",
+            link: "https://docs.thousandeyes.com/product-documentation/tests#onboarding"
           }
         ]
       },
       {
-        title: "Customize Template Settings",
-        description: "Modify the template parameters to fit your requirements.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Review The Deployment",
+        description: "Deployment Summary displays the assets to be deployed. Notice that not only tests are deployed but also Labels to categorize tests and Dashboards to display the results",
+        image: "/images/task3-step4.png",
         resources: [
           {
-            title: "Template Customization Guide",
-            link: "https://docs.example.com/customize-templates"
+            title: "Labels",
+            link: "https://docs.thousandeyes.com/product-documentation/tests/working-with-labels-for-agent-and-test-groups"
           }
         ]
       },
       {
-        title: "Configure Deployment Targets",
-        description: "Select where the template should be deployed.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        title: "Review And Deploy",
+        description: "Deploy the template",
+        image: "/images/task3-step5.png",
         resources: [
           {
             title: "Deployment Targets Guide",
@@ -257,39 +257,7 @@ export const TASKS_DATA: TaskWithSteps[] = [
           }
         ]
       },
-      {
-        title: "Set Deployment Schedule",
-        description: "Determine when the template should be deployed.",
-        image: "photo-1461749280684-dccba630e2f6",
-        resources: [
-          {
-            title: "Scheduling Guide",
-            link: "https://docs.example.com/scheduling"
-          }
-        ]
-      },
-      {
-        title: "Deploy the Template",
-        description: "Execute the template deployment process.",
-        image: "photo-1486312338219-ce68d2c6f44d",
-        resources: [
-          {
-            title: "Deployment Process Guide",
-            link: "https://docs.example.com/deployment"
-          }
-        ]
-      },
-      {
-        title: "Verify Deployment Success",
-        description: "Ensure the template has been deployed correctly.",
-        image: "photo-1531297484001-80022131f5a1",
-        resources: [
-          {
-            title: "Verification Guide",
-            link: "https://docs.example.com/verification"
-          }
-        ]
-      }
+
     ]
   },
   {
@@ -301,90 +269,90 @@ export const TASKS_DATA: TaskWithSteps[] = [
     badgeName: "Designer",
     steps: [
       {
-        title: "Access Dashboard Creator",
-        description: "Navigate to the dashboard creation tool.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Dashboards Overview",
+        description: "ThousandEyes dashboards are a way to see customized live views of your test data, or Internet Insights collective intelligence. Dashboards are composed of widgets including maps, tables, bar and pie charts, and various other types of visual charting.",
+        image: "/images/task4-step1.png",
         resources: [
           {
             title: "Dashboard Overview",
-            link: "https://docs.example.com/dashboards"
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards"
           }
         ]
       },
       {
-        title: "Plan Your Dashboard Layout",
-        description: "Decide on the structure and components of your dashboard.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        title: "Creating a Dashboard",
+        description: "You can create your dashboard by starting with a blank page, or utilize one of the ready-to-use templates, or use the dashboards that are deployed by Tests Templates",
+        image: "/images/task4-step2.png",
         resources: [
           {
-            title: "Dashboard Planning Guide",
-            link: "https://docs.example.com/dashboard-planning"
+            title: "Dashboard Templates",
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-templates"
           }
         ]
       },
       {
         title: "Add Widgets",
-        description: "Select and add widgets to your dashboard.",
-        image: "photo-1461749280684-dccba630e2f6",
+        description: "A widget type refers to a category of widgets. For example, live status widgets includes the Agent Status and Alert List widgets.",
+        image: "/images/task4-step3.png",
         resources: [
           {
             title: "Widget Guide",
-            link: "https://docs.example.com/widgets"
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-widgets"
           }
         ]
       },
       {
         title: "Configure Data Sources",
-        description: "Connect your widgets to appropriate data sources.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        description: "Connect your widgets to appropriate data sources. The widget can source data from Agents, Tests, Devices, Endpoints and Alerts and many other sources",
+        image: "/images/task4-step4.png",
         resources: [
           {
-            title: "Data Source Configuration",
-            link: "https://docs.example.com/data-sources"
+            title: "Widget Guide",
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-widgets"
           }
         ]
       },
       {
-        title: "Arrange Dashboard Elements",
-        description: "Organize your dashboard components for optimal viewing.",
-        image: "photo-1531297484001-80022131f5a1",
+        title: "Select the Measure",
+        description: "Widgets can display the selected measure depending on the selected layer, for example Network Layer will display Loss, Latency, Jitter, and Bandwidth.",
+        image: "/images/task4-step5.png",
         resources: [
           {
-            title: "Layout Best Practices",
-            link: "https://docs.example.com/dashboard-layout"
+            title: "Widget Guide",
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-widgets"
           }
         ]
       },
       {
-        title: "Set Refresh Intervals",
-        description: "Configure how often your dashboard data updates.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Arrange Widgets",
+        description: "You can rearrange widgets to best suit your needs. You can also resize them to fit your dashboard layout.",
+        image: "/images/task4-step6.png",
         resources: [
           {
-            title: "Refresh Settings Guide",
-            link: "https://docs.example.com/refresh-settings"
+            title: "Widget Guide",
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-widgets"
           }
         ]
       },
       {
         title: "Save and Share Dashboard",
-        description: "Finalize your dashboard and share with team members.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        description: "Dashboards can be saved and shared in PDF or CSV formats. Widgets can also be embedded in status pages in an iFrame format",
+        image: "/images/task4-step7.png",
         resources: [
           {
             title: "Dashboard Sharing Guide",
-            link: "https://docs.example.com/dashboard-sharing"
+            link: "https://docs.thousandeyes.com/product-documentation/dashboards/dashboard-shares-snapshots"
           }
         ]
       },
       {
-        title: "Set Dashboard Permissions",
-        description: "Control who can view or edit your dashboard.",
-        image: "photo-1461749280684-dccba630e2f6",
+        title: "Dashboard Creation Best Practices",
+        description: "This document provides the Art of Dashboard Creation.",
+        image: "/images/task4-step8.png",
         resources: [
           {
             title: "Permission Settings Guide",
-            link: "https://docs.example.com/dashboard-permissions"
+            link: "https://www.ciscolive.com/c/dam/r/ciscolive/emea/docs/2024/pdf/BRKOPS-2076.pdf"
           }
         ]
       }
@@ -398,23 +366,23 @@ export const TASKS_DATA: TaskWithSteps[] = [
     steps: [
       {
         title: "Navigate to Alert Section",
-        description: "Find the alerts configuration area in the platform.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        description: "The ThousandEyes platform allows you to configure highly customizable alert rules and assign them to tests, in order to highlight or be notified of events of interest.",
+        image: "/images/task5-step1.png",
         resources: [
           {
             title: "Alerts Overview",
-            link: "https://docs.example.com/alerts-overview"
+            link: "https://docs.thousandeyes.com/product-documentation/alerts"
           }
         ]
       },
       {
         title: "Select Alert Type",
-        description: "Choose the appropriate type of alert for your needs.",
-        image: "photo-1531297484001-80022131f5a1",
+        description: "Each feature has its own set of alerts. For this excercise, we will create an alert for Network and App Synthetics. You can also create alerts for Internet Insights, Endpoint Agents, and Network Devices.",
+        image: "/images/task5-step2.png",
         resources: [
           {
             title: "Alert Types Guide",
-            link: "https://docs.example.com/alert-types"
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules"
           }
         ]
       },
