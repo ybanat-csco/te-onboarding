@@ -292,7 +292,7 @@ export const TASKS_DATA: TaskWithSteps[] = [
       },
       {
         title: "Add Widgets",
-        description: "A widget type refers to a category of widgets. For example, live status widgets includes the Agent Status and Alert List widgets.",
+        description: "A widget type refers to a category of widgets. You can select from a wide array of widgets such as timelines, cards, maps, and charts",
         image: "/images/task4-step3.png",
         resources: [
           {
@@ -313,8 +313,8 @@ export const TASKS_DATA: TaskWithSteps[] = [
         ]
       },
       {
-        title: "Select the Measure",
-        description: "Widgets can display the selected measure depending on the selected layer, for example Network Layer will display Loss, Latency, Jitter, and Bandwidth.",
+        title: "Select the Metric",
+        description: "Widgets can display the selected Metric depending on the selected layer, for example Network Layer will display Loss, Latency, Jitter, and Bandwidth.",
         image: "/images/task4-step5.png",
         resources: [
           {
@@ -366,7 +366,7 @@ export const TASKS_DATA: TaskWithSteps[] = [
     steps: [
       {
         title: "Navigate to Alert Section",
-        description: "The ThousandEyes platform allows you to configure highly customizable alert rules and assign them to tests, in order to highlight or be notified of events of interest.",
+        description: "The ThousandEyes platform allows you to configure highly customizable alert rules and assign them to tests, in order to highlight or be notified of events of interest. To create alerts, navigate to Manage >> Alert Rules",
         image: "/images/task5-step1.png",
         resources: [
           {
@@ -387,166 +387,266 @@ export const TASKS_DATA: TaskWithSteps[] = [
         ]
       },
       {
-        title: "Define Alert Conditions",
-        description: "Set the thresholds and conditions that trigger the alert.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Select Alert Type",
+        description: "Every layer has its own alert rules. For example, Network Layer alerts are different from Web Layer alerts. On the right side, you can see the list of tests compatible with the selcted alert rule",
+        image: "/images/task5-step3.png",
         resources: [
           {
-            title: "Alert Conditions Guide",
-            link: "https://docs.example.com/alert-conditions"
+            title: "Alert Types",
+            link: "https://docs.thousandeyes.com/product-documentation/getting-started/getting-started-with-alerts"
           }
         ]
       },
       {
-        title: "Configure Notification Methods",
-        description: "Set up how and to whom alerts will be sent.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        title: "Configure Alert Settings",
+        description: "Associate the alert rule with the necessary tests, and agents, and set the Severity Level.",
+        image: "/images/task5-step4.png",
         resources: [
           {
-            title: "Notification Configuration",
-            link: "https://docs.example.com/notifications"
+            title: "Alert Rule Severity",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/alert-severity"
           }
         ]
       },
       {
-        title: "Set Alert Priority",
-        description: "Assign appropriate priority levels to your alert.",
-        image: "photo-1461749280684-dccba630e2f6",
+        title: "Alert Conditions - Global and Location Conditions",
+        description: "Alert rules have global and location conditions; global alerts activate when all conditions are met, while location alerts qualify as part of a global event when some conditions are met, not based on physical location.",
+        image: "/images/global-location.png",
         resources: [
           {
-            title: "Priority Levels Guide",
-            link: "https://docs.example.com/priority-levels"
+            title: "Adaptive Alerting",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/adaptive-alerting"
           }
         ]
       },
       {
-        title: "Create Alert Schedule",
-        description: "Define when the alert should be active.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        title: "Global Alert Conditions - Adaptive",
+        description: "Adaptive alert detection is a combination of probability theory, historic agent behavior, and your sensitivity setting applied to your alert rule’s global alert setting. Adaptive alerting is designed to deduce when a real alertable issue occurs based on your test's anomaly records, reducing the number of false positives you receive and increasing your confidence that the alerts you do receive are genuine issues.",
+        image: "/images/task5-step6.png",
         resources: [
           {
-            title: "Alert Scheduling Guide",
-            link: "https://docs.example.com/alert-scheduling"
+            title: "Adaptive Alerting",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/adaptive-alerting",
+        
+          },
+          
+          
+        ]
+      },
+      {
+        title: "Global Alert Conditions - Manual",
+        description: "You can also set the global alert conditions manually",
+        image: "/task5-step7.png",
+        resources: [
+          {
+            title: "Manual Alerting Method",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/adaptive-alerting#manual-alert-method"
+            
           }
         ]
       },
       {
-        title: "Test Alert Functionality",
-        description: "Verify that your alert works as expected.",
-        image: "photo-1531297484001-80022131f5a1",
+        title: "Location Alert Conditions",
+        description: "Depending on the Alert Type, Location Alert Conditions can include HTTP Availability, Network Packet Loss, Page Load Time, Jitter, HTTP Response and many more conditions. The thresholds can be set manually, or to track a Dynamic baseline. You can use AND/OR statements between different conditions",
+        image: "/images/task5-step8.png",
         resources: [
           {
-            title: "Testing Alerts Guide",
-            link: "https://docs.example.com/testing-alerts"
+            title: "Alerts Metrics Guide",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/alert-metrics-reference"
+          },
+          {
+            title: "Dynamic Baseline",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/creating-and-editing-alert-rules/dynamic-baselines"
           }
         ]
       },
       {
-        title: "Review Alert History",
-        description: "Learn how to review past alert triggers and responses.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
+        title: "Alerts Notification",
+        description: "Users and Services can be notified when alerts are triggered via emails, webhooks and integrations.",
+        image: "/images/task5-step9.png",
         resources: [
           {
-            title: "Alert History Guide",
-            link: "https://docs.example.com/alert-history"
+            title: "Alert Notification",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/alert-notifications"
+          }
+        ]
+      },
+      {
+        title: "Viewing Alerts",
+        description: "Alerts' History can be viewed from Alerts Tab. You can see Active Alerts, and Alerts History.",
+        image: "/images/task5-step10.png",
+        resources: [
+          {
+            title: "Viewing Alerts",
+            link: "https://docs.thousandeyes.com/product-documentation/alerts/viewing-alerts#looking-up-alerts-from-the-alerts-screen"
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    id: 6,
+    title: "Endpoint Agent ",
+    description: "Introduction to  Endpoint Agent",
+    completed: false,
+    steps: [
+      {
+        title: "Endpoint Agent Overview",
+        description: "The ThousandEyes Endpoint Agent is an application that is installed on Windows or macOS machines to collect network- and application-layer performance data when users access specific websites from within monitored networks.",
+        image: "/images/task6-step1.png",
+        resources: [
+          {
+            title: "Endpoint Agents Overview",
+            link: "https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents"
+          },
+          {
+            title: "How Do Endpoint Agents Work",
+            link: "https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/how-does-the-endpoint-agent-work"
+          }
+        ]
+      },
+      {
+        title: "Installing Endpoint Agent",
+        description: "From Endpoint Experience tab, browse to Agent Settings and click on Add New Endpoint Agent button on the top right corner.",
+        image: "/images/task6-step2.png",
+        resources: [
+          {
+            title: "Endpoint Agent Installation",
+            link: "https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing"
+          }
+        ]
+      },
+      {
+        title: "Following through the Installation Wizard",
+        description: "The Installation Wizard is fairly straight forward and will guide you through the installation process. There are some add-ons during the installation that enables additional features like TCP Tests and Real-User tests. After the installation, the agent should pop up on the Dashboard ",
+        image: "/images/task6-step1.png",
+        resources: [
+          {
+            title: "Endpoint Agent Installation Wizard",
+            link: "https://docs.thousandeyes.com/product-documentation/global-vantage-points/endpoint-agents/installing/install-the-endpoint-agent"
+          }
+        ]
+      },
+      {
+        title: "Endpoint Agent Tests - Synthetic Tests",
+        description: "A synthetic tests template combines scheduled and dynamic tests to monitor a specific application. All the major applications have a defined synthetic tests template, and you can also create a custom template for applications that do not have a predefined template.",
+        image: "/images/task6-step4.png",
+        resources: [
+          {
+            title: "Synthetic Tests",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/test-settings/synthetic-tests"
+          }
+        ]
+      },
+      {
+        title: "Configuring Synthetic Templates",
+        description: "Similar to Network&App Synthetics, Endpoint Agent tests offer ready-to-use templates that cover the most popular SaaS applications. The templates include Scheduled tests on HTTP and Network Layers, and Dynamic Tests that are activated when users access the application.",
+        image: "/images/task6-step5.png",
+        resources: [
+          {
+            title: "Synthetic Tests Guide",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/test-settings/synthetic-tests"
+          }
+        ]
+      },
+      {
+        title: "Real User Tests",
+        description: "Real user tests get automatically deployed when the user visits a website in the monitored domain set. A monitored domain set consists of domains that you want to gather end-user performance metrics about. The best practice is to use business-relevant domains for tools and sites that your end users access",
+        image: "/images/task6-step6.png",
+        resources: [
+          {
+            title: "Real User Tests",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/test-settings/real-user-tests"
+          }
+        ]
+      },
+      {
+        title: "Endpoint Agent Views",
+        description: "To View the results of Synthetic, Real-User, and local (DNS, Gateway, VPN, and Wireless metrics), navigate to Views",
+        image: "/images/task6-step7.png",
+        resources: [
+          {
+            title: "Agent Views",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/viewing-data"
+          }
+        ]
+      },
+      {
+        title: "Singe Agent Views - Heatmap",
+        description: "Single Agent Views provides a heatmap and a more focused approach on a single agent, which make it easier to troubleshoot issues across various layers. Navigate to Endpoint Experience >> Agent Views",
+        image: "/images/task6-step9.png",
+        resources: [
+          {
+            title: "Single Agent Views",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/viewing-data/agent-views"
+          }
+        ]
+      },
+      {
+        title: "Singe Agent Views - Segment Visualization",
+        description: "This view provides a comprehensive look at the entire network journey for the single round selected in the timeline, starting from the agent and ending at the destination/application. This allows for pinpointing the specific segment causing performance degradation, along with its metrics and values.",
+        image: "/images/task6-step8.png",
+        resources: [
+          {
+            title: "Segment Visualization",
+            link: "https://docs.thousandeyes.com/product-documentation/end-user-monitoring/viewing-data/agent-views#segment-visualization"
           }
         ]
       }
     ]
   },
+
   {
-    id: 6,
-    title: "Create the Role-Based Profile",
-    description: "Configure role-based access controls for enhanced security",
+    id: 7,
+    title: "Role Based Access Control",
+    description: "Create a Role-Based profile",
     completed: false,
     badge: "Security Guru",
     badgeName: "Security Guru",
     steps: [
       {
-        title: "Access Role Management",
-        description: "Navigate to the role management section of the platform.",
-        image: "photo-1488590528505-98d2b5aba04b",
+        title: "RBAC Overview",
+        description: "Role-Based Access Control. It's a security mechanism that grants users access to resources based on their assigned roles within an organization. This means users are granted permissions to access information and perform actions based on their job function, rather than having individual access rights set for each user. Navigate to Manage >> Account Settings >> Users and Roles",
+        image: "/images/task7-step1.png",
         resources: [
           {
-            title: "Role Management Overview",
-            link: "https://docs.example.com/role-management"
+            title: "RBAC Explained",
+            link: "https://docs.thousandeyes.com/product-documentation/user-management/rbac/role-based-access-control-explained"
           }
         ]
       },
       {
-        title: "Understand Available Roles",
-        description: "Learn about the default roles and their permissions.",
-        image: "photo-1461749280684-dccba630e2f6",
+        title: "Default Roles",
+        description: "ThousandEyes offers 3 default roles : Organization Admin, Account Admin, and a Regular User",
+        image: "/images/task7-step2.png",
         resources: [
           {
-            title: "Default Roles Guide",
-            link: "https://docs.example.com/default-roles"
+            title: "Built-in Roles and Permissions",
+            link: "https://docs.thousandeyes.com/product-documentation/user-management/rbac/built-in-roles-and-permissions"
           }
         ]
       },
       {
-        title: "Create a Custom Role",
-        description: "Define a new role tailored to your organization's needs.",
-        image: "photo-1486312338219-ce68d2c6f44d",
+        title: "Custom Roles",
+        description: "You can also create your own custom roles profile, select the appropriate permissions to associate with the role, and then attach the role to the users. ",
+        image: "/images/task7-step3.png",
         resources: [
+  
           {
-            title: "Custom Roles Guide",
-            link: "https://docs.example.com/custom-roles"
+            title: "Built-in Roles and Permissions",
+            link: "https://docs.thousandeyes.com/product-documentation/user-management/rbac/built-in-roles-and-permissions"
           }
         ]
       },
       {
-        title: "Configure Role Permissions",
-        description: "Assign appropriate permissions to your custom role.",
-        image: "photo-1531297484001-80022131f5a1",
+        title: "Assigning Users to Custom Roles",
+        description: "Navigate to the Users Tab, then assign the user to the appropriate roles",
+        image: "/images/task7-step4.png",
         resources: [
           {
-            title: "Permission Configuration",
-            link: "https://docs.example.com/permissions"
-          }
-        ]
-      },
-      {
-        title: "Assign Role to Users",
-        description: "Link users to appropriate roles within the system.",
-        image: "photo-1487058792275-0ad4aaf24ca7",
-        resources: [
-          {
-            title: "User Assignment Guide",
-            link: "https://docs.example.com/user-assignment"
-          }
-        ]
-      },
-      {
-        title: "Test Role Restrictions",
-        description: "Verify that role-based restrictions work as expected.",
-        image: "photo-1488590528505-98d2b5aba04b",
-        resources: [
-          {
-            title: "Testing Access Controls",
-            link: "https://docs.example.com/testing-access"
-          }
-        ]
-      },
-      {
-        title: "Review Access Logs",
-        description: "Learn how to monitor user access based on roles.",
-        image: "photo-1461749280684-dccba630e2f6",
-        resources: [
-          {
-            title: "Access Logs Guide",
-            link: "https://docs.example.com/access-logs"
-          }
-        ]
-      },
-      {
-        title: "Optimize Role Structure",
-        description: "Refine your role structure for optimal security and usability.",
-        image: "photo-1486312338219-ce68d2c6f44d",
-        resources: [
-          {
-            title: "Role Optimization Guide",
-            link: "https://docs.example.com/role-optimization"
+            title: "Assigning Roles to Users",
+            link: "https://docs.thousandeyes.com/product-documentation/user-management/rbac/role-based-access-control-explained#editing-users"
           }
         ]
       }
