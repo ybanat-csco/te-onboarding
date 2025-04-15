@@ -11,11 +11,12 @@ const Welcome = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-primary-light to-white p-4">
       <div className="max-w-3xl w-full bg-white rounded-lg shadow-lg p-8 text-center">
         <div className="mb-8">
-          <Trophy className="h-16 w-16 mx-auto text-badge" />
-        </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-          Welcome to ThousandEyes Onboarding!
-        </h1>
+        <img 
+            src="/ThousandEyes-logo.png" 
+            alt="Welcome Trophy" 
+            className="h-64 w-96 mx-auto object-cover object-center"
+          />        </div>
+
         <p className="text-lg text-gray-700 mb-8">
           We've created an interactive journey to help you get the most out of ThousandEyes. 
           Complete tasks to earn badges and master the platform's capabilities!
